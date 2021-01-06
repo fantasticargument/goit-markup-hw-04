@@ -65,6 +65,20 @@ img {
     margin: 0 auto;
 }
 
+.visually-hidden
+ {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 /* ==================HEDER================== */
 .logo
 {
@@ -244,6 +258,7 @@ img {
 .specionalization-conteiner
 {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;    
 }
     
@@ -507,6 +522,10 @@ img {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.adress-street-item
+{
+    margin-top: 9px;
+}
 .foter-social-networks-item
 {
     display: flex;
@@ -573,6 +592,7 @@ padding: 6px 22px;
 {
     background: var(--accent-color);
     color: var(--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* =============END BUTTONS============== */
