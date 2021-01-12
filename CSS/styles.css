@@ -203,6 +203,7 @@ img {
     url('../images/Герой/Img.jpg');
     background-size: cover;
     background-position: center;
+    margin: 0 auto;
 }
 
 .hero
@@ -244,6 +245,11 @@ img {
 }
 /* ================END HERO================ */
 /* =============SPECIALIZATION============= */
+
+.specionalization
+{
+    margin-top: 94px;
+}
 
 .specionalization-item-title
 {
@@ -383,12 +389,18 @@ img {
     justify-content: center;
 }
 
+.social-networks-item
+{
+    width: 20px;
+    height: 20px;
+}
+
 .social-networks-list:not(:last-child)
 {
     margin-right: 10px;
 }
 
-.social-networks-item
+.social-command-link
 {
     display: flex;
     width: 44px;
@@ -406,8 +418,8 @@ img {
     fill: currentColor;
 }
 
-.social-networks-item:hover, 
-.social-networks-item:focus
+.social-command-link:hover, 
+.social-command-link:focus
 {
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -440,7 +452,7 @@ img {
     margin-bottom: 79px;
 }
 
-.client-list-item
+.client-link
 {
     display: flex;
     width: 170px;
@@ -461,8 +473,8 @@ img {
     fill: currentColor;
 }
 
-.client-list-item:hover,
-.client-list-item:focus
+.client-link:hover,
+.client-link:focus
 {
     color: var(--accent-color);
 }
@@ -526,7 +538,7 @@ img {
 {
     margin-top: 9px;
 }
-.foter-social-networks-item
+.footer-social-link
 {
     display: flex;
     width: 44px;
@@ -545,8 +557,14 @@ img {
     fill: currentColor;
 }
 
-.foter-social-networks-item:hover, 
-.foter-social-networks-item:focus
+.foter-social-networks-item
+{
+    width: 20px;
+    height: 20px;
+}
+
+.footer-social-link:hover, 
+.footer-social-link:focus
 {
     background-color: var(--accent-color);
     color: var(--white-color);
@@ -626,12 +644,17 @@ padding: 6px 22px;
     margin-bottom: 94px;
 }
 
-.card-item:hover
+.card-link
+{
+    display: block;
+}
+
+.card-link:hover,
+.card-link:focus
 {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
      0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
-
 }
 
 .card-list > .card-item
